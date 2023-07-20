@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,200;0,600;1,300&family=Inter:wght@300&family=Outfit:wght@500&family=Poppins:wght@100;200;700&display=swap"  rel="stylesheet">
+  <link rel="stylesheet" href="./Style/Style.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="text">
+      <div class="title">Learn to code by watching others</div>
+      <div class="sub_title">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+        great, but understanding how developers think is invaluable.</div>
+    </div>
+    <div class="form_Sigup">
+      <div>
+        <div class="btn_free">
+          <div >Try it free 7 day</div>
+          <div class="btn_free_month"> then $20/mo. thereafter</div>
+        </div>
+        <div class="form_back_ground">
+            <form class="form_input" id="signupForm">
+              <div class="input_field">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <div id="firts_name_error"></div>
+              </div>
+              <div class="input_field">
+              <input type="text" id="lastName" placeholder="Last Name" required>
+              <div id="last_name_error"></div>
+              </div>
+              <div class="input_field">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <div id="email_error"></div>
+              </div>
+              <div class="input_field">
+                <input type="password" id="password" placeholder="Password" required>
+                <div id="password_error"></div>
+              </div>
+
+              <button type="submit" onclick="myFunction()">Claim your free trial</button>
+              <div class="lists_items">
+                <div class="items_click">By clicking the button, you are agreeing to our</div>
+                <div class="items_term"> Terms and Services</div>
+              </div>
+            </form>
+            <div id="resultMessage"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Script.js"></script>
+</body>
+
+</html>
